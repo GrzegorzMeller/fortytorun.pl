@@ -1,0 +1,64 @@
+﻿@model SportsStore.Models.Product
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Edycja @Model.Name</h1>
+
+ @using (Html.BeginForm("Edit", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+ {
+     @Html.HiddenFor(model=>model.ProductID)
+
+    <div class="editor-label">
+        @Html.LabelFor(model=>model.Name)
+    </div>
+    <div class="editor-label">
+        @Html.TextBoxFor(model=>model.Name, new{ @class="form-control",rows=5 })
+    </div>
+     @Html.ValidationMessage("Name")
+
+
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Category)
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.Category, new{ @class = "form-control",rows = 5 })
+    </div>
+    @Html.ValidationMessage("Category")
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Description)
+    </div>
+    <div class="editor-field", rows="5">
+        @Html.TextAreaFor(model => model.Description, new { @class = "form-control", rows = 5 })
+    </div>
+    @Html.ValidationMessage("Description")
+
+
+
+    <div class="form-group">
+        <div style="position:relative;">
+            <label>Zdjęcie</label>
+            <a class='btn' href='javascript:;'>
+              
+                <input type="file" name="Images" size="40" id="Images" multiple="multiple"
+                        style="position:absolute; z-index:2; top:0;left:0;filter:alpha(opacity=0);
+                        background-color:transparent;color:blue;" 
+                        onchange='$("#upload-file-info").html($(this).val());'>
+            </a>
+            <span class='label label-info' id="upload-file-info"></span>
+           
+        </div>
+       
+      
+      
+
+    </div>
+
+
+    <input type="submit" value="Zapisz" />
+    @Html.ActionLink("Anuluj i wróć do listy ", "Index")
+ }
+ 
+

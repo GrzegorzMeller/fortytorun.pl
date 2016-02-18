@@ -1,0 +1,321 @@
+body
+{
+	margin: 0px;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+}
+.main-box
+{
+	margin-left:20%;
+   
+    
+}
+
+#top
+{
+	width:100%;
+	background-color:#F5F5F5;
+	color: #38404B;
+	height:140px;
+
+	
+}
+#top-left
+{
+text-decoration: none;
+font-weight: 400;
+font-size: 20px;
+ float: left;
+  width: 50%; 
+  height:150px;
+
+}
+#top-right
+{
+ float: left;
+
+	margin-top:35px;
+ height:150px;
+
+}
+.titletop
+{
+    text-decoration:none;
+opacity:0.7;
+    font-size:18px;
+    	color: #38404B;
+}
+.titletop:hover
+{
+    text-decoration:none;
+   
+    font-size:18px;
+    	color: #38404B;
+    opacity: 0.8;
+}
+#picture
+{
+	
+	width:100%;
+	height:70%;
+
+	background-image: url("tlo.jpg");
+	background-position: center;
+	background-size:cover;
+	border-bottom: 5px solid gray;
+	margin:0px;
+}
+
+
+.button
+{
+	
+ float: left;
+  min-width: 50px;
+  height: 25px;
+  font-size: 18px;
+  padding: 10px;
+font-size: 20px;
+  opacity:0.8;
+  text-decoration: none;
+	color: #38404B;
+}
+
+.button:hover
+{
+	 float: left;
+  min-width: 50px;
+  height: 25px;
+  font-size: 20px;
+  padding: 10px;
+  
+  opacity:0.8;
+  border-top:4px solid #FFE344;
+  text-decoration:none;
+  color: #38404B;
+}
+
+#content
+{
+	
+	 display: inline-block;
+	width:100%;
+	
+
+}
+#bottom
+{
+ margin-top:20px;
+	height:160px;
+	width: 100%;
+}
+
+#partners
+{
+    float: left;
+	width:50%;
+	height:160px;
+	background-color: #cfd8dc;
+}
+
+#advertisement
+{
+	float: left;
+	width:48%;
+	height:160px;
+	background-color: #cfd8dc;
+	margin-left: 2%;
+}
+
+#picture2
+{
+	
+	width:100%;
+	height:50%;
+	background-image: url("tlo2.jpg");
+	background-position: center;
+	background-size:cover;
+	border-bottom: 5px solid gray;
+	margin:0px;
+}
+
+#footer
+{
+	margin-top: 0px;
+	width: 100%;
+	background-color:#303030;
+	color: #FFF;
+    display:inline-block;
+	
+}
+
+.article
+{
+    width:100%;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.left
+{
+    float: left;
+    width:450px;   
+}
+
+.right
+{   
+    color: #38404B;
+    font-size:17px;
+    float: left;
+}
+.menu2
+{   
+    text-decoration:none;
+    color: #38404B;
+    background-color:#FFE344;
+    color:white;
+    float:left;
+    font-size:25px;
+    padding:3px;
+    margin-left:4px;
+}
+.button2
+{
+	
+ float: left;
+  min-width: 20px;
+  height: 15px;
+  font-size: 18px;
+  padding: 10px;
+font-size: 20px;
+  opacity:0.8;
+  text-decoration: none;
+	color: #38404B;
+}
+
+.button2:hover
+{
+	 float: left;
+  min-width: 25px;
+  height: 15px;
+  font-size: 20px;
+  padding: 10px;
+  
+  opacity:0.8;
+  border-top:4px solid #FFE344;
+  text-decoration:none;
+  color: #38404B;
+}
+#tlo2
+{
+   width:100%;
+	display: inline-block;
+	background-image: url("tlo3.jpg") ;
+	background-position: center;
+	background-size:cover;
+	border-bottom: 5px solid gray;
+
+    font-size:60px;
+    color:#FFE344;
+    padding-top:170px;
+}
+.up
+{
+    z-index:100;
+}
+.button3
+{
+    width: 115px;
+    height: 25px;
+   margin-top:20px;
+    padding: 10px;
+    text-align: center ;
+    border-radius: 5px ;
+
+    color: white;
+   font-size:30px;
+  text-decoration:none;
+}
+.button3:hover
+{
+    width: 115px;
+    height: 25px;
+   margin-top:20px;
+    padding: 10px;
+    text-align: center ;
+    border-radius: 5px ;
+  
+    color: white;
+   font-size:30px;
+  text-decoration:none;
+  background:  #38404B;
+  
+}
+#content2
+{
+    display: inline-block;
+	width:100%;
+}
+.button4
+{
+       width: 115px;
+    height: 25px;
+   margin-top:20px;
+    padding: 10px;
+    text-align: center ;
+    border-bottom:5px #FFE344 solid ;
+    color: #38404B;
+   font-size:30px;
+  text-decoration:none;
+
+}
+.button5
+{
+    width: 95px;
+    height: 25px;
+   margin-top:10px;
+    padding: 10px;
+    text-align: center ;
+    border-radius: 5px ;
+  
+    color: #38404B;
+   font-size:18px;
+  text-decoration:none;
+  
+  
+}
+.link55
+{
+    text-decoration:none;
+    color:#38404B;
+}
+.link55:hover
+{
+    text-decoration:none;
+    color:#38404B;
+    opacity:0.8;
+}
+.main-box2
+{
+    display:inline-block;
+  margin-left:20%;
+  margin-right:20%;
+    font-size:19px;
+    text-align:justify;
+}
+#gsharp
+{
+    float: left;
+    width:45%;
+    padding:15px;
+    font-size: 15px;
+   
+   
+}
+#onas
+{
+    padding:15px;
+    font-size: 15px;
+    float: left;
+    
+}

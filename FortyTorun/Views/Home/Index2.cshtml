@@ -1,0 +1,29 @@
+﻿@using SportsStore.Models
+@model  IEnumerable<SportsStore.Models.Product>
+@{
+    ViewBag.Title = "Produkty";
+}
+
+<div class="main-box">
+    <div id="content">
+        @foreach (var p in Model)
+        {
+
+            @Html.Partial("ProductSummary", p);
+            <br />
+        }
+    </div>
+
+    <br />
+    <div >
+        @for (var i = 0; i < (ViewBag.Info + 4) / 4; ++i)
+            {
+                int pom = i + 1;
+                string myString = pom.ToString();
+            <div >
+                @Html.ActionLink(myString, "Index2", new { category = @ViewBag.Category, page = i + 1 },new {@class="menu2" })
+            </div>
+        }
+    </div>
+</div>
+

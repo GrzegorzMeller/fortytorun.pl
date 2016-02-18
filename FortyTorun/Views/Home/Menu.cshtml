@@ -1,0 +1,14 @@
+﻿@using SportsStore.Models
+@model IEnumerable<string>
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+<link rel="stylesheet" type="text/css" href="~/Content/style.css">
+@Html.ActionLink("Strona główna", "Index",new{ }, new { @class = "button" })
+@foreach (var link in Model)
+{
+    @Html.ActionLink(link, "Index2", new { category = link}, new { @class = "button"  })
+}
+
+@Html.ActionLink("Kontakt", "Kontakt", new { }, new { @class = "button" })

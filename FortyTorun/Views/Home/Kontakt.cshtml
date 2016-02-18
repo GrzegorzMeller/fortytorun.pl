@@ -1,0 +1,39 @@
+﻿@model SportsStore.Models.Poczta
+
+@{
+    ViewBag.Title = "Kontakt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="main-box2">
+    <h2>Masz pytanie? Napisz do nas. Odpowiemy na nie mailowo. </h2>
+
+    @using (Html.BeginForm("Kontakt", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.HiddenFor(model => model.MessageID)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </div>
+        <div class="editor-label">
+            @Html.TextBoxFor(model => model.Name, new { @class = "form-control", rows = 5 })
+        </div>
+        @Html.ValidationMessage("Name")
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Email, new { @class = "form-control", rows = 5 })
+        </div>
+        @Html.ValidationMessage("Email")
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MessageText)
+        </div>
+        <div class="editor-field" , rows="5">
+            @Html.TextAreaFor(model => model.MessageText, new { @class = "form-control", rows = 5 })
+        </div>
+        @Html.ValidationMessage("MessageText")
+        <input type="submit" value="Wyślij" />
+    }
+    </div>

@@ -1,0 +1,59 @@
+﻿<html>
+<head>
+    <title>Opuszczone Fortyfikacje Toruń</title>
+    <meta charset="utf-8" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/ErrorStyles.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73787772-1', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+
+    @if (TempData["message"] != null)
+    {
+        <div class="alert alert-success">@TempData["message"]</div>
+    }
+    <div id="top">
+        <div id="top-left"><a class="titletop" href="http://fortytorun.pl/"><h2>&nbsp; &nbsp;FORTY<br />&nbsp; &nbsp;TORUN.pl</h2></a></div>
+        <div id="top-right">
+         @Html.Action("Menu", "Home")
+        </div>
+    </div>
+    
+   
+            @RenderBody()
+      
+    <div id="picture2"> </div>
+    <div id="footer">
+        <div id="gsharp">
+            <h2>Wykonanie</h2> <br />
+            Wykonawcą strony jest  @Html.ActionLink("G-Sharp", "gsharp",new { } ,new {target="_blank"})
+        </div>
+        <div id="onas">
+            <h2>O nas</h2>
+            Strona powstała, aby pokazać torunianom wiele fascynujących miejsc, kóre na codzień mogą pozostać niezauważone. <br /><br/>
+            <div class="fb-page" data-href="https://www.facebook.com/Opuszczone-Fortyfikacje-Toru%C5%84-547680058700581/?fref=ts" data-tabs="timeline" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+        </div>
+    </div>
+</body>
+</html>

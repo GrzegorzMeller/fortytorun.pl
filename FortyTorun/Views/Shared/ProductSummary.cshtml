@@ -1,0 +1,18 @@
+﻿@model SportsStore.Models.Product
+<link rel="stylesheet" type="text/css" href="~/Content/style.css">
+
+ <div class="article">
+     <div class="left">
+  
+        <div class="pull-left" style="margin-right:10px">
+            <a href="@Url.Action("Read", "Home",new { productId = Model.ProductID })">
+                <img class="img-thumbnail" width="320" height="250" src="@Url.Action("GetImage","Home",new {Model.ProductID })" />
+ </a></div>
+ 
+    </div>
+
+    <div class="right">  
+   
+       <h2> @Html.ActionLink(Model.Name, "Read", new { productId = Model.ProductID }, new { @class = "link55" } )</h2>
+    </div>
+</div>

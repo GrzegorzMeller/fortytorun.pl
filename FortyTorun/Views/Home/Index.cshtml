@@ -1,0 +1,25 @@
+﻿@using SportsStore.Models
+@model  IEnumerable<SportsStore.Models.Product>
+@{
+    ViewBag.Title = "Produkty";
+
+}
+<div id="picture"></div>
+<div id="tlo2">
+    <center class="up">
+        Odwiedź z nami wszystkie Forty w Toruniu! <br /><br />
+        @Html.ActionLink("Więcej", "Index2", new { category = "Forty" }, new { @class = "button3" })
+    </center>
+</div>
+<div class="main-box">
+    <div id="content2">
+        <h1>@Html.ActionLink("Aktualności", "Index2", new { category = "Aktualności" }, new { @class = "button4" })</h1><br />
+        @foreach (var p in Model)
+        {
+
+            @Html.Partial("ProductSummary", p);
+            <br />
+        }
+        @Html.ActionLink("Więcej...", "Index2", new { category = "Aktualności" }, new { @class = "button5" })
+    </div>
+    </div>
